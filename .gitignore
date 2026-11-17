@@ -1,0 +1,26 @@
+# Python environments
+venv/
+.venv/
+*-venv/
+
+# SKY130 PDK and technology files
+sky130A/
+sky130B/
+*.lib.spice
+
+# Temporary simulation files
+*.raw
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Editor temporary files
+*~
+
+# Xschem-generated netlists
+schematics/simulation/

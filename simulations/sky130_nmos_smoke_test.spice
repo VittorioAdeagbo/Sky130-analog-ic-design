@@ -1,0 +1,18 @@
+* SKY130 NMOS model smoke test
+* PDK corner: typical (tt)
+* Test only; does not modify the existing amplifier.
+
+.lib "$PDK_ROOT/$PDK/libs.tech/ngspice/sky130.lib.spice" tt
+
+VDS d 0 1.0
+VGS g 0 1.2
+XMN d g 0 0 sky130_fd_pr__nfet_01v8 W=2 L=0.15
+
+.control
+op
+print v(d)
+print v(g)
+print -i(VDS)
+.endc
+
+.end

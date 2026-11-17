@@ -1,0 +1,18 @@
+* SKY130 NMOS DC Transfer Characteristic Test
+
+.lib "$PDK_ROOT/$PDK/libs.tech/ngspice/sky130.lib.spice" tt
+
+VDS d 0 1.8
+VGS g 0 0
+
+X1 d g 0 0 sky130_fd_pr__nfet_01v8 L=0.15 W=2
+
+.control
+set wr_singlescale
+dc VGS 0 1.8 0.01
+let idrain = -i(VDS)
+plot idrain
+wrdata simulations/tests/sky130_nmos_transfer.dat idrain
+.endc
+
+.end

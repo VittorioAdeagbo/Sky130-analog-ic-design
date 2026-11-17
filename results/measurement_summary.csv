@@ -1,0 +1,24 @@
+analysis,parameter,input_amplitude_peak,frequency,value,unit,notes
+DC,drain_voltage,,,0.9589,V,Operating point
+DC,gate_voltage,,,0.9000,V,Operating point
+DC,drain_current,,,84.1,uA,Approximate
+DC,transconductance,,,0.6397,mS,Operating point
+DC,output_conductance,,,38.11,uS,Operating point
+DC,intrinsic_output_resistance,,,26.24,kOhm,Calculated as reciprocal of gds
+AC,voltage_gain,,,4.6316,V/V,Low-frequency gain magnitude
+AC,voltage_gain,,,13.3146,dB,Low-frequency gain
+AC,output_phase,,,180,degree,Approximate phase shift
+Output impedance,transistor_output_impedance,,,26.246,kOhm,Low-frequency intrinsic output impedance with drain resistor removed
+Transient,voltage_gain,10mV,1MHz,4.60,V/V,Approximate
+Transient,voltage_gain,25mV,1MHz,4.6215,V/V,
+Transient,voltage_gain,50mV,1MHz,4.5875,V/V,
+Transient,voltage_gain,100mV,1MHz,4.4584,V/V,
+Transient,voltage_gain,150mV,1MHz,4.1839,V/V,
+Transient,voltage_gain,200mV,1MHz,3.6970,V/V,
+THD,total_harmonic_distortion,25mV,1MHz,0.443574,percent,
+THD,total_harmonic_distortion,50mV,1MHz,0.919882,percent,
+THD,total_harmonic_distortion,53mV,1MHz,0.980674,percent,
+THD,total_harmonic_distortion,54mV,1MHz,,percent,Greater than 1 percent; exact value not recorded
+THD,total_harmonic_distortion,60mV,1MHz,1.12625,percent,
+THD,total_harmonic_distortion,100mV,1MHz,2.07931,percent,
+THD,total_harmonic_distortion,200mV,1MHz,6.75037,percent,
